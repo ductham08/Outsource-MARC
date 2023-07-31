@@ -348,6 +348,7 @@ body.active {
 .footer {
     background-color: #F4C4CB;
     margin-top: 25px;
+    padding: 20px 0px !important;
 }
 
 .footer a {
@@ -363,11 +364,10 @@ body.active {
 }
 
 .footer .content-top {
-    /* max-width: 85%; */
     margin: auto;
     padding: 25px 0 !important;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     flex-wrap: wrap;
 }
@@ -392,6 +392,10 @@ body.active {
     padding: 10px 15px !important;
 }
 
+.footer .content-left {
+    font-family: "san-bold";
+}
+
 .footer .content-bottom .content {
     display: none;
 }
@@ -411,6 +415,7 @@ body.active {
 
     .footer .content-left {
         display: none;
+        font-family: "san-bold";
     }
 
     .footer .content-top,
