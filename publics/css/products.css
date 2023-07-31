@@ -1,0 +1,181 @@
+/* PRODUCT PAGE START */
+
+.list-product{
+    display: flex;
+    align-items: fle;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 25px auto;
+}
+
+.list-product .list-item-product{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.list-product .list-item-product .item-product{
+    width: 32%;
+}
+
+.list-product .list-item-product .item-product .name-item{
+    display: -webkit-box;
+    -webkit-line-clamp: 1;  /* số dòng hiển thị */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin:10px 0px;
+}
+
+.list-product .list-item-product .item-product .name-item a{
+    color: black;
+}
+
+.list-product .list-item-product .item-product .action-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.list-product .list-item-product .item-product button{
+    border: none;
+    width: 100px;
+    outline: none;
+    background-color: transparent;
+    padding: 7px 0;
+    text-align: center;
+}
+
+.list-product .list-item-product .item-product button.buy{
+    background-color: #EA4071 ;
+    border: 1px solid #EA4071 ;
+    color: white;
+}
+
+.list-product .list-item-product .item-product button.bag{
+    border: 1px solid #EA4071 ;
+    color: black;
+}
+
+.list-product .select .select-desk h5{
+    font-family: 'san-bold';
+    margin-bottom: 10px;
+}
+
+.list-product .select .select-desk ul li{
+    list-style: none;
+}
+
+.list-product .select .select-desk ul li a{
+    color: black;
+}
+
+.list-product .select .select-desk .color a{
+    display: block;
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+}
+
+.list-product .select .select-desk .color ul{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.red{
+    background-color: red;
+}
+
+.black{
+    background-color: black;
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+.green{
+    background-color: green;
+}
+
+.title-pro h2{
+    text-align: center;
+    margin: auto;
+    font-family: 'san-bold';
+    margin: 25px auto; 
+}
+
+.list-product .select .select-mob{
+    display: none;
+}
+
+
+@media (max-width:767px) {
+
+    .list-product .select .select-desk{
+        display: none;
+    }
+        
+    .list-product .select .select-mob{
+        display: block;
+        margin-bottom: 25px;
+    }
+
+    ::placeholder {
+        color: rgba(255, 255, 255, 0.582); /* Set the desired color for the placeholder text */
+    }
+
+    .list-product .select .select-mob{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .list-product .select .select-mob .item-select{
+        width: 32%;
+    }
+
+    .list-product .select .select-mob .item-select select{
+        width: 100%;
+        outline: none;
+        border: none;
+        box-shadow: 0px 0px 3px 0px black;
+        border-radius: 5px;
+        padding: 2px 5px;
+    }
+
+    .list-product {
+        padding: 0px 15px !important;
+    }
+
+    .list-product .list-item-product .item-product button{
+        width: 45%;
+        font-size: 13px;
+    }
+
+    .list-product .list-item-product{
+        margin: 10px 0;
+    }
+
+    .list-product .list-item-product .item-product{
+        width: 49%;
+        margin-bottom: 10px;
+    }
+    
+}
+
+/* PRODUCT PAGE END */
+
+
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+

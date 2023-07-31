@@ -1,0 +1,222 @@
+
+/* BEST SELLER START */
+
+.best-seller{
+    margin: 15px auto;
+    padding: 25px 0;
+}
+
+h2{
+    display: block;
+    margin: 0px auto 25px auto;
+    text-align: center;
+    font-family: 'san-bold';
+}
+
+.content-seller .item-seller{
+    width: 23.5%;
+}
+
+.content-seller{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 25px auto;
+    flex-wrap: wrap;
+}
+
+.content-seller .name-item{
+  	display: -webkit-box;
+  	-webkit-line-clamp: 1;  /* số dòng hiển thị */
+  	-webkit-box-orient: vertical;
+  	overflow: hidden;
+  	text-overflow: ellipsis;
+  	margin:10px 0px;
+}
+
+.content-seller .name-item a{
+    color: black;
+}
+
+.content-seller button{
+    border: none;
+    width: 100px;
+    outline: none;
+    background-color: transparent;
+    padding: 7px 0;
+    text-align: center;
+}
+
+.content-seller .action-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.content-seller button.buy{
+    background-color: #EA4071 ;
+    border: 1px solid #EA4071 ;
+    color: white;
+}
+
+.content-seller button.bag{
+    border: 1px solid #EA4071 ;
+    color: black;
+}
+
+@media (max-width:768px) {
+    .content-seller .item-seller{
+        width: 32%;
+    }
+
+    .content-seller button{
+        width: 45%;
+        font-size: 13px;
+    }
+
+    .content-seller .item-seller.item-md{
+        display: none;
+    }
+
+    .content-seller{
+        padding: 0px 10px;
+    }
+}
+
+@media (max-width:576px) {
+
+    .content-seller .item-seller{
+        width:49%;
+    }
+
+    .content-seller .item-seller.item-sm{
+        display: none;
+    }
+}
+
+
+/* BEST SELLER END */
+
+/* DETAIL PAGE START */
+
+.detail-page{
+    margin: 50px auto;
+}
+
+.detail-page .detail-item.container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.detail-page .detail-item .desc-item{
+    padding-left: 25px !important;
+}
+
+.detail-page h5{
+    text-align: left;
+    font-family: 'san-bold';
+}
+
+.detail-page .images-product .panigate .swiper-slide{
+    height: 120px !important;
+    width: 32% !important;
+    margin: 0 !important;
+}
+
+.detail-page .images-product .panigate .swiper-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px !important;
+}
+
+.detail-page .form .item-size button{
+    background-color: gainsboro;
+    text-align: center;
+    border: none;
+    padding: 2px 7px;
+    width: 28px;
+    margin-top: 5px;
+    font-family: "san-bold";
+    margin-right: 10px;
+}
+
+.detail-page .form .item-form{
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 15px 0;
+}
+
+.detail-page .form .item-form b{
+    margin-bottom: 5px;
+    display: block;
+}
+
+.detail-page .form .item-form .count{
+    display: flex;
+    align-items: center;
+    align-items: stretch;
+}
+
+.detail-page .form .item-form .count .input-number{
+    width: 35px;
+    text-align: center;
+    box-shadow: 0px 0px 3px 0px rgb(100, 100, 100);
+    margin: 0px 5px;
+    border-radius: 3px;
+}
+
+.detail-page .form .item-form .count button{
+    margin: 0;
+    border-radius: 3px ;
+    height: 28px;
+    width: 28px;
+    background-color: transparent;
+    box-shadow: 0px 0px 3px 0px rgb(100, 100, 100);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.detail-page .item-desc{
+    margin: 15px 0;
+}
+
+.detail-page .form .action-item button{
+    border: none;
+    width: 100px;
+    outline: none;
+    background-color: transparent;
+    padding: 7px 0;
+    text-align: center;
+}
+
+.detail-page .form .action-item button.buy{
+    background-color: #EA4071 ;
+    border: 1px solid #EA4071 ;
+    color: white;
+}
+
+.detail-page .form .action-item button.bag{
+    border: 1px solid #EA4071 ;
+    color: black;
+}
+
+@media (max-width:767px) {
+    .detail-page .detail-item.container{
+        padding: 0px 15px !important;
+    }
+
+    .detail-page .detail-item .desc-item{
+        padding: 0px !important;
+        margin-top: 25px;
+    }
+}
+
+/* DETAIL PAGE END */
+
