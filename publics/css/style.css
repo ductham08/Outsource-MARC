@@ -39,7 +39,7 @@ h2{
 
 .content-seller button{
     border: none;
-    width: 100px;
+    width: 45%;
     outline: none;
     background-color: transparent;
     padding: 7px 0;
@@ -260,7 +260,7 @@ h2{
 
 .list-product .list-item-product .item-product button{
     border: none;
-    width: 100px;
+    width: 45%;
     outline: none;
     background-color: transparent;
     padding: 7px 0;
