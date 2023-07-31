@@ -427,6 +427,10 @@ body.active {
         max-width: 100%;
     }
 
+    .footer .content-bottom .contact{
+        font-family: "san-bold";
+    }
+
     .footer .content-bottom .content {
         display: block;
         display: flex;
