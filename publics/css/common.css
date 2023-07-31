@@ -355,7 +355,7 @@ body.active {
 }
 
 .footer p {
-    margin: 5px 0;
+    margin: 15px 0;
 }
 
 .footer h4 {
@@ -365,6 +365,7 @@ body.active {
 .footer .content-top {
     /* max-width: 85%; */
     margin: auto;
+    padding: 25px 0 !important;
     display: flex;
     align-items: center;
     justify-content: space-between;
