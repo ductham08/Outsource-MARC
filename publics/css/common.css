@@ -363,6 +363,10 @@ body.active {
     font-family: "san-bold";
 }
 
+.footer .content-top .left b{
+    font-family: "san-bold";
+}
+
 .footer .content-top {
     margin: auto;
     padding: 25px 0 !important;
