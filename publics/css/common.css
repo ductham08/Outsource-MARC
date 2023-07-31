@@ -363,7 +363,7 @@ body.active {
 }
 
 .footer .content-top {
-    max-width: 85%;
+    /* max-width: 85%; */
     margin: auto;
     display: flex;
     align-items: center;
@@ -385,7 +385,7 @@ body.active {
 }
 
 .footer .content-bottom {
-    max-width: 85%;
+    /* max-width: 85%; */
     margin: auto;
     text-align: center;
     padding: 10px 15px !important;

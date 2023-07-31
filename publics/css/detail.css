@@ -6,6 +6,12 @@
     padding: 25px 0;
 }
 
+h3 {
+    display: block;
+    margin: 0 auto 25px auto;
+    text-align: left;
+    font-family: 'san-bold';
+}
 h4{
     display: block;
     margin: 45px auto 25px auto;
