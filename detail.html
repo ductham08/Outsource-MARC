@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi tiết sản phẩm</title>
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <!-- SWIPPER -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <!-- BASE CSS -->
+    <link rel="stylesheet" href="./publics/css/style.css">
+</head>
+
+<body>
+
+    <!-- MAIN START -->
+    <div class="main">
+
+        <!-- NAVBAR START -->
+        <div class="navbar-home">
+            <div class="top-navbar">
+                <div class="container">
+
+                    <div class="input col-xl-4 col-lg-4 col-md-4 col-sm-3 col-3">
+                        <div class="btn-nav">
+                            <div class="item-btn top"></div>
+                            <div class="item-btn center"></div>
+                            <div class="item-btn bottom"></div>
+                        </div>
+
+                        <form action="">
+                            <div class="item-form">
+                                <label for="search">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M9.16667 15.8333C12.8486 15.8333 15.8333 12.8486 15.8333 9.16667C15.8333 5.48477 12.8486 2.5 9.16667 2.5C5.48477 2.5 2.5 5.48477 2.5 9.16667C2.5 12.8486 5.48477 15.8333 9.16667 15.8333Z"
+                                            stroke="black" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M17.5 17.5L13.875 13.875" stroke="black" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </label>
+                                <input id="search" type="text" placeholder="Search">
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="logo col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6">
+                        <img src="./publics/images/logo-header.png" width="100%" alt="">
+                    </div>
+
+                    <div class="icon col-xl-4 col-lg-4 col-md-4 col-sm-3 col-3">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_1_160)">
+                                            <path
+                                                d="M7.49996 18.3681C7.9602 18.3681 8.33329 17.995 8.33329 17.5347C8.33329 17.0745 7.9602 16.7014 7.49996 16.7014C7.03972 16.7014 6.66663 17.0745 6.66663 17.5347C6.66663 17.995 7.03972 18.3681 7.49996 18.3681Z"
+                                                stroke="black" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path
+                                                d="M16.6667 18.3681C17.1269 18.3681 17.5 17.995 17.5 17.5347C17.5 17.0745 17.1269 16.7014 16.6667 16.7014C16.2065 16.7014 15.8334 17.0745 15.8334 17.5347C15.8334 17.995 16.2065 18.3681 16.6667 18.3681Z"
+                                                stroke="black" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path
+                                                d="M0.833374 0.86792H4.16671L6.40004 12.0263C6.47624 12.4099 6.68496 12.7546 6.98966 12.9998C7.29436 13.2451 7.67562 13.3754 8.06671 13.3679H16.1667C16.5578 13.3754 16.9391 13.2451 17.2438 12.9998C17.5484 12.7546 17.7572 12.4099 17.8334 12.0263L19.1667 5.03459H5.00004"
+                                                stroke="black" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_1_160">
+                                                <rect width="20" height="20" fill="white"
+                                                    transform="translate(0 0.034668)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M17.3667 3.84172C16.9411 3.41589 16.4357 3.0781 15.8795 2.84763C15.3233 2.61716 14.7271 2.49854 14.1251 2.49854C13.523 2.49854 12.9268 2.61716 12.3706 2.84763C11.8144 3.0781 11.309 3.41589 10.8834 3.84172L10.0001 4.72506L9.11673 3.84172C8.25698 2.98198 7.09092 2.49898 5.87506 2.49898C4.6592 2.49898 3.49314 2.98198 2.63339 3.84172C1.77365 4.70147 1.29065 5.86753 1.29065 7.08339C1.29065 8.29925 1.77365 9.46531 2.63339 10.3251L3.51672 11.2084L10.0001 17.6917L16.4834 11.2084L17.3667 10.3251C17.7926 9.89943 18.1304 9.39407 18.3608 8.83785C18.5913 8.28164 18.7099 7.68546 18.7099 7.08339C18.7099 6.48132 18.5913 5.88514 18.3608 5.32893C18.1304 4.77271 17.7926 4.26735 17.3667 3.84172Z"
+                                            stroke="black" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M16.6667 18.4656V16.7989C16.6667 15.9149 16.3155 15.067 15.6904 14.4419C15.0653 13.8168 14.2174 13.4656 13.3334 13.4656H6.66671C5.78265 13.4656 4.93481 13.8168 4.30968 14.4419C3.68456 15.067 3.33337 15.9149 3.33337 16.7989V18.4656"
+                                            stroke="black" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M9.99996 10.1322C11.8409 10.1322 13.3333 8.63986 13.3333 6.79891C13.3333 4.95796 11.8409 3.46558 9.99996 3.46558C8.15901 3.46558 6.66663 4.95796 6.66663 6.79891C6.66663 8.63986 8.15901 10.1322 9.99996 10.1322Z"
+                                            stroke="black" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- NAV BOTTOM -->
+            <div class="bottom-navbar">
+                <div class="container">
+                    <ul>
+                        <li>
+                            <a href="#">HOME</a>
+                        </li>
+                        <li>
+                            <a href="#">ABOUT US</a>
+                        </li>
+                        <li>
+                            <a href="#">SHOP</a>
+                        </li>
+                        <li>
+                            <a href="#">RETURN & EXCHSGE</a>
+                        </li>
+                        <li>
+                            <a href="#">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- NAVBAR END -->
+
+
+        <!-- LINE BAR START -->
+        <div class="left-bar">
+            <div class="background-left-bar"></div>
+            <div class="content-left-bar">
+                <div class="menu">
+                    <div class="item-menu">
+                        <a href="./market-page.html"> HOME </a>
+                    </div>
+                    <div class="item-menu">
+                        <a href="./market-page.html"> ABOUT US </a>
+                    </div>
+                    <div class="item-menu">
+                        <a href="./market-page.html"> SHOP </a>
+                    </div>
+                    <div class="item-menu">
+                        <a href="./market-page.html"> RETURN & EXCHSGE </a>
+                    </div>
+                    <div class="item-menu">
+                        <a href="./market-page.html"> CONTACT </a>
+                    </div>
+                    <div class="item-menu">
+                        <form action="">
+                            <div class="item-form">
+                                <label for="search">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M9.16667 15.8333C12.8486 15.8333 15.8333 12.8486 15.8333 9.16667C15.8333 5.48477 12.8486 2.5 9.16667 2.5C5.48477 2.5 2.5 5.48477 2.5 9.16667C2.5 12.8486 5.48477 15.8333 9.16667 15.8333Z"
+                                            stroke="black" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M17.5 17.5L13.875 13.875" stroke="black" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </label>
+                                <input id="search" type="text" placeholder="Search">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- LINE BAR END -->
+
+
+        <!-- MAIN PAGE START -->
+
+
+        <div class="detail-page">
+
+            <!-- DETAIL START -->
+
+            <div class="detail-item container">
+                <div class="images-product col-md-6 col-12">
+                    <div class="swiper mySwiper2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img width="100%" src="./publics/images/detail-1.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img width="100%" src="./publics/images/detail-2.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img width="100%" src="./publics/images/detail-3.png" />
+                            </div>
+                        </div>
+                    </div>
+                    <div thumbsSlider="" class="swiper mySwiper panigate">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img width="100%" src="./publics/images/detail-1.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img width="100%" src="./publics/images/detail-2.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img width="100%" src="./publics/images/detail-3.png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12 desc-item">
+                    <h5 class="name-product">
+                        Đầm sát nách cổ yếm form ôm phối bèo
+                    </h5>
+
+                    <p class="price"><b>1,895,000₫</b></p>
+
+                    <div class="form">
+                        <div class="item-size item-form">
+                            <p><b>Size:</b></p>
+                            <div class="size">
+                                <button>S</button>
+                                <button>M</button>
+                                <button>L</button>
+                            </div>
+                        </div>
+                        <div class="item-size item-form">
+                            <p><b>Số lượng:</b></p>
+                            <div class="count">
+                                <button id="increase">+</button>
+                                <div class="input-number">1</div>
+                                <button id="decrease">-</button>
+                            </div>
+                        </div>
+
+                        <div class="action-item">
+                            <button class="buy">Buy</button>
+                            <button class="bag">Add To Bag</button>
+                        </div>
+                    </div>
+
+                    <div class="desc">
+
+                        <div class="item-desc">
+                            <h5>Thông tin sản phẩm:</h5>
+                            <p>Đầm voan dập họa tiết cổ yếm, rã nhiều lớp bèo</p>
+                            <p>- Vải voan dập hoạ tiết mỏng nhẹ, bồng bềnh mềm mại. Chất vải mát, thoáng, sang trọng</p>
+                            <p>- Phù hợp đi du lịch, đi biển, dã ngoại,...</p>
+                        </div>
+
+                        <div class="item-desc">
+                            <h5>Hướng dẫn bảo quản:</h5>
+                            <p>- Treo với móc áo có khấc</p>
+                            <p>- Giặt hấp hoặc giặt tay để tránh bay màu hoặc xù lông, ủi nhiệt độ bình thường. Phơi, ủi mặt trái. Không vắt hoặc xoắn mạnh vì điều này có thể gây ra các nếp nhăn và ảnh hưởng đến độ bền, cấu trúc của vải.</p>
+                        </div>
+
+                        <div class="item-desc">
+                            <h5>Thông số sản phẩm theo số đo S-M-L:</h5>
+                            <p>- Dài đầm từ giữa cổ : 79-80-81</p>
+                            <p>- Rộng ngực: 82-86-90</p>
+                            <p>- Rộng eo: 64-68-72</p>
+                            <p>- Rộng mông: 88-92-96</p>
+                        </div>
+
+                        <div class="item-desc">
+                            <h5>Dịch vụ:</h5>
+                            <p>Miễn phí giao hàng:</p>
+                            <p>- Nội thành HCM: đơn từ 300K. </p>
+                            <p>- Giao hàng toàn quốc.</p>
+                            <p>- Đổi/Trả dễ dàng 30 ngày:</p>
+                            <p>- Miễn phí đổi/trả hàng 30 ngày từ khi nhận sản phẩm. </p>
+                            <p>- Áp dụng tất cả sản phẩm. </p>
+                            <p>- Hoàn tiền 100% khi khách hàng đổi ý.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- DETAIL END -->
+
+
+            <!-- BEST SELLER START -->
+            <div class="best-seller container">
+                <h5>SẢN PHẨM TƯƠNG TỰ</h5>
+
+                <div class="content-seller">
+                    <div class="item-seller">
+                        <img src="./publics/images/bes-1.png" width="100%" alt="">
+
+                        <div class="detail-item">
+                            <p class="name-item">
+                                <a href="#">Đầm mini 2 dây cutout eo phối ren 2 tầng</a>
+                            </p>
+                            <b class="item-price">995,000₫ </b>
+
+                            <div class="action-item">
+                                <button class="buy">Buy</button>
+                                <button class="bag">Add To Bag</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item-seller">
+                        <img src="./publics/images/best-2.png" width="100%" alt="">
+
+                        <div class="detail-item">
+                            <p class="name-item">
+                                <a href="#">Đầm mini form A phối dây nơ ngực tay phồng</a>
+                            </p>
+                            <b class="item-price">595,000₫</b>
+
+                            <div class="action-item">
+                                <button class="buy">Buy</button>
+                                <button class="bag">Add To Bag</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item-seller item-sm">
+                        <img src="./publics/images/best-3.png" width="100%" alt="">
+
+                        <div class="detail-item">
+                            <p class="name-item">
+                                <a href="#">Đầm ôm mini 2 dây smocking phối lai bèo</a>
+                            </p>
+                            <b class="item-price">695,000₫</b>
+
+                            <div class="action-item">
+                                <button class="buy">Buy</button>
+                                <button class="bag">Add To Bag</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item-seller item-md item-sm">
+                        <img src="./publics/images/best-4.png" width="100%" alt="">
+
+                        <div class="detail-item">
+                            <p class="name-item">
+                                <a href="#">Áo crop bẹt vai phối bèo smocking tay</a>
+                            </p>
+                            <b class="item-price">555,000₫</b>
+
+                            <div class="action-item">
+                                <button class="buy">Buy</button>
+                                <button class="bag">Add To Bag</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- BEST SELLER END -->
+        </div>
+
+
+        <!-- MAIN PAGE END -->
+
+
+        <!-- FOOTER START -->
+
+        <div class="footer">
+            <div class="container content-top">
+                <div class="left col-md-5 col-12">
+                    <div class="logo col-md-5 col-7">
+                        <img src="./publics/images/logo-header.png" width="100%" alt="">
+                    </div>
+
+                    <div class="content-left">
+                        <p><b>Hotline: 033 745 4722</b></p>
+                        <p><b>Address: 73A street, Hoan Kiem District, Hanoi</b></p>
+                        <p><b>Email: contact.tiffanystudios@gmail.com</b></p>
+                        <div class="icon-footer">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M15 1.66663H12.5C11.3949 1.66663 10.3351 2.10561 9.55373 2.88701C8.77233 3.66842 8.33334 4.72822 8.33334 5.83329V8.33329H5.83334V11.6666H8.33334V18.3333H11.6667V11.6666H14.1667L15 8.33329H11.6667V5.83329C11.6667 5.61228 11.7545 5.40032 11.9108 5.24404C12.067 5.08776 12.279 4.99996 12.5 4.99996H15V1.66663Z"
+                                    stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1_403)">
+                                    <path
+                                        d="M14.1667 1.66663H5.83332C3.53214 1.66663 1.66666 3.53211 1.66666 5.83329V14.1666C1.66666 16.4678 3.53214 18.3333 5.83332 18.3333H14.1667C16.4678 18.3333 18.3333 16.4678 18.3333 14.1666V5.83329C18.3333 3.53211 16.4678 1.66663 14.1667 1.66663Z"
+                                        stroke="black" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M13.3333 9.47501C13.4362 10.1685 13.3177 10.8769 12.9948 11.4992C12.6719 12.1215 12.161 12.6262 11.5347 12.9414C10.9084 13.2566 10.1987 13.3663 9.5065 13.255C8.81428 13.1436 8.17481 12.8167 7.67904 12.321C7.18327 11.8252 6.85645 11.1857 6.74507 10.4935C6.63368 9.8013 6.7434 9.09159 7.05862 8.46532C7.37383 7.83905 7.8785 7.32812 8.50083 7.00521C9.12316 6.68229 9.83147 6.56383 10.525 6.66667C11.2324 6.77158 11.8874 7.10123 12.3931 7.60693C12.8988 8.11263 13.2284 8.76757 13.3333 9.47501Z"
+                                        stroke="black" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M14.5833 5.41663H14.5918" stroke="black" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1_403">
+                                        <rect width="20" height="20" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1_407)">
+                                    <path
+                                        d="M18.7833 5.35004C18.6843 4.95455 18.4827 4.59218 18.1989 4.29955C17.915 4.00691 17.559 3.79436 17.1667 3.68337C15.7333 3.33337 10 3.33337 10 3.33337C10 3.33337 4.26667 3.33337 2.83333 3.71671C2.44104 3.82769 2.08498 4.04024 1.80112 4.33288C1.51726 4.62552 1.31566 4.98788 1.21666 5.38337C0.954344 6.838 0.826028 8.31363 0.833332 9.79171C0.823981 11.2809 0.952305 12.7678 1.21666 14.2334C1.3258 14.6166 1.53192 14.9652 1.81512 15.2454C2.09832 15.5257 2.44902 15.7282 2.83333 15.8334C4.26667 16.2167 10 16.2167 10 16.2167C10 16.2167 15.7333 16.2167 17.1667 15.8334C17.559 15.7224 17.915 15.5098 18.1989 15.2172C18.4827 14.9246 18.6843 14.5622 18.7833 14.1667C19.0436 12.723 19.1719 11.2587 19.1667 9.79171C19.176 8.3025 19.0477 6.81562 18.7833 5.35004Z"
+                                        stroke="black" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M8.125 12.5167L12.9167 9.79165L8.125 7.06665V12.5167Z" stroke="black"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1_407">
+                                        <rect width="20" height="20" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="right col-md-7 col-12">
+                    <div class="item-right col-6">
+                        <h4>Shop</h4>
+                        <p><a href="#">Set</a></p>
+                        <p><a href="#">Dress</a></p>
+                        <p><a href="#">Shirts & Tops</a></p>
+                        <p><a href="#">Skirts</a></p>
+                        <p><a href="#">Trousers</a></p>
+                    </div>
+
+                    <div class="item-right col-6">
+                        <h4>Contact</h4>
+                        <p><a href="#">Payment</a></p>
+                        <p><a href="#">Shipping</a></p>
+                        <p><a href="#">Size Guide</a></p>
+                        <p><a href="#">Return & Exchange</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="container content-bottom">
+                <div class="content">
+                    <div class="contact col-7">
+                        <p><b>Hotline: 033 745 4722</b></p>
+                        <p><b>Address: 73A street, Hoan Kiem District, Hanoi</b></p>
+                        <p><b>Email: contact.tiffanystudios@gmail.com</b></p>
+                    </div>
+                    <div class="icon-footer col-5">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M15 1.66663H12.5C11.3949 1.66663 10.3351 2.10561 9.55373 2.88701C8.77233 3.66842 8.33334 4.72822 8.33334 5.83329V8.33329H5.83334V11.6666H8.33334V18.3333H11.6667V11.6666H14.1667L15 8.33329H11.6667V5.83329C11.6667 5.61228 11.7545 5.40032 11.9108 5.24404C12.067 5.08776 12.279 4.99996 12.5 4.99996H15V1.66663Z"
+                                stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_1_403)">
+                                <path
+                                    d="M14.1667 1.66663H5.83332C3.53214 1.66663 1.66666 3.53211 1.66666 5.83329V14.1666C1.66666 16.4678 3.53214 18.3333 5.83332 18.3333H14.1667C16.4678 18.3333 18.3333 16.4678 18.3333 14.1666V5.83329C18.3333 3.53211 16.4678 1.66663 14.1667 1.66663Z"
+                                    stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M13.3333 9.47501C13.4362 10.1685 13.3177 10.8769 12.9948 11.4992C12.6719 12.1215 12.161 12.6262 11.5347 12.9414C10.9084 13.2566 10.1987 13.3663 9.5065 13.255C8.81428 13.1436 8.17481 12.8167 7.67904 12.321C7.18327 11.8252 6.85645 11.1857 6.74507 10.4935C6.63368 9.8013 6.7434 9.09159 7.05862 8.46532C7.37383 7.83905 7.8785 7.32812 8.50083 7.00521C9.12316 6.68229 9.83147 6.56383 10.525 6.66667C11.2324 6.77158 11.8874 7.10123 12.3931 7.60693C12.8988 8.11263 13.2284 8.76757 13.3333 9.47501Z"
+                                    stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M14.5833 5.41663H14.5918" stroke="black" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_1_403">
+                                    <rect width="20" height="20" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_1_407)">
+                                <path
+                                    d="M18.7833 5.35004C18.6843 4.95455 18.4827 4.59218 18.1989 4.29955C17.915 4.00691 17.559 3.79436 17.1667 3.68337C15.7333 3.33337 10 3.33337 10 3.33337C10 3.33337 4.26667 3.33337 2.83333 3.71671C2.44104 3.82769 2.08498 4.04024 1.80112 4.33288C1.51726 4.62552 1.31566 4.98788 1.21666 5.38337C0.954344 6.838 0.826028 8.31363 0.833332 9.79171C0.823981 11.2809 0.952305 12.7678 1.21666 14.2334C1.3258 14.6166 1.53192 14.9652 1.81512 15.2454C2.09832 15.5257 2.44902 15.7282 2.83333 15.8334C4.26667 16.2167 10 16.2167 10 16.2167C10 16.2167 15.7333 16.2167 17.1667 15.8334C17.559 15.7224 17.915 15.5098 18.1989 15.2172C18.4827 14.9246 18.6843 14.5622 18.7833 14.1667C19.0436 12.723 19.1719 11.2587 19.1667 9.79171C19.176 8.3025 19.0477 6.81562 18.7833 5.35004Z"
+                                    stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M8.125 12.5167L12.9167 9.79165L8.125 7.06665V12.5167Z" stroke="black"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_1_407">
+                                    <rect width="20" height="20" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                </div>
+                <p>Copyright © 2023 MARC</p>
+            </div>
+        </div>
+
+        <!-- FOOTER END -->
+
+    </div>
+    <!-- MAIN END -->
+
+    <!-- JQUERY -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- SWIPPER -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+
+    <script>
+
+        // SLIDER
+        var swiper = new Swiper(".slider", {
+            loop: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+        });
+
+        var swiper = new Swiper(".content-style", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            autoplay: {
+                delay: 1000
+            },
+            breakpoints: {
+                "@0.00": {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                    autoplay: false
+                },
+                "@0.75": {
+                    autoplay: false,
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                "@1.00": {
+                    autoplay: false,
+                    slidesPerView: 3,
+                    spaceBetween: 40,
+                },
+                "@1.50": {
+                    autoplay: false,
+                    slidesPerView: 4,
+                    spaceBetween: 50,
+                },
+            },
+        });
+
+        // NAV LEFT START
+        $(document).ready(function () {
+
+            $(".btn-nav").click(function () {
+                $(".left-bar").addClass("active");
+                $("body").addClass("active");
+            });
+
+            $(".background-left-bar").click(function () {
+                $(".left-bar").removeClass("active");
+                $("body").removeClass("active");
+            });
+        });
+        // NAV LEFT END
+
+        // DETAIL PAGE START
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            spaceBetween: 10,
+            slidesPerView: 4,
+            freeMode: true,
+            watchSlidesProgress: true,
+        });
+        var swiper2 = new Swiper(".mySwiper2", {
+            loop: true,
+            spaceBetween: 10,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            thumbs: {
+                swiper: swiper,
+            },
+        });
+        // DETAIL PAGE END
+
+        // COUNT EDIT START
+
+        $(document).ready(function() {
+            // Get the initial value from the "input-number" div
+            var currentValue = parseInt($(".input-number").text());
+
+            // Function to increase the value
+            $("#increase").click(function() {
+                currentValue++;
+                $(".input-number").text(currentValue);
+            });
+
+            // Function to decrease the value
+            $("#decrease").click(function() {
+                currentValue = Math.max(1, currentValue - 1); // To prevent negative values
+                $(".input-number").text(currentValue);
+            });
+        });
+
+        // COUNT EDIT END
+
+    </script>
+
+</body>
+
+</html>
